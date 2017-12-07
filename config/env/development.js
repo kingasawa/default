@@ -26,6 +26,9 @@ module.exports = {
   },
   connections: {
 
+    localDiskDb: {
+      adapter: 'sails-disk'
+    },
 
     localhost: {
       adapter: 'sails-postgresql',

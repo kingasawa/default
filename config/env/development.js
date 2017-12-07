@@ -44,7 +44,7 @@ module.exports = {
   models: {
     migrate: 'alter',
 
-    connection: 'localhost',
+    connection: 'localDiskDb',
 
   },
 

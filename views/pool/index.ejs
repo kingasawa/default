@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col s4">
+    <ul class="collection with-header">
+      <li class="collection-header grey darken-1 white-text">Account info<span class="white-text secondary-content"><%= data.account%></span></li>
+      <li class="collection-item">
+        <p>Account Balance</p>
+        <h3><%= data.account_balance %></h3>
+      </li>
+      <li class="collection-item">
+        <p>Last 24-Hour Earnings</p>
+        <h3><%= data.profit_24hour %></h3>
+      </li>
+      <li class="collection-item">
+        <p>Total Earnings</p>
+        <h3><%= data.profit_total %></h3>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col s4">
+    <ul class="collection with-header">
+      <li class="collection-header grey darken-1 white-text">Hashrate<a href="#" class="white-text secondary-content">Go set fluctuation notification</a></li>
+      <li class="collection-item">
+        <p>10-Min Average</p>
+        <h3><%= data.hashrate_last_10min %></h3>
+      </li>
+      <li class="collection-item">
+        <p>1-Hour Average</p>
+        <h3><%= data.hashrate_last_1hour %></h3>
+      </li>
+      <li class="collection-item">
+        <p>1-Day Average</p>
+        <h3><%= data.hashrate_last_1day %></h3>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col s4">
+    <ul class="collection with-header">
+      <li class="collection-header grey darken-1 white-text">Worker</li>
+      <li class="collection-item">
+        <p>Active</p>
+        <h3 class="active"><%= data.worker_active %></h3>
+      </li>
+      <li class="collection-item">
+        <p>Inactive</p>
+        <h3 class="inactive"><%= data.worker_unactive %></h3>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<style>
+  h3 {
+    color:#00acc1;
+  }
+  h3.active{
+    color:#43a047;
+  }
+  h3.inactive{
+    color:#dd2c00;
+  }
+</style>

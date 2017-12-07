@@ -1,0 +1,65 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.8px;
+}
+body {
+  background: #f3f3f3;
+  //display: flex;
+  //min-height: 100vh;
+  //flex-direction: column;
+}
+section#info {
+  padding:40px 0;
+  background: #fff;
+  img.section-info-img {
+    max-width:60%;
+  }
+}
+.text-bold {
+  font-family: 'Anton', sans-serif;
+}
+#sign-in {
+  max-width: 500px;
+  margin:0 auto;
+}
+#user-menu {
+  background-color: rgba(255, 255, 255, 0.15);
+  li:hover {
+    background-color: rgba(38, 166, 154, 0.10);
+  }
+  a:hover{
+    background: none;
+  }
+}
+input {
+  color:#000;
+  letter-spacing: 0.8px;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+form {
+  color:#bfbfbf;
+  background: #fff;
+  padding:30px 30px 10px;
+}
+
+.btn-full {
+  width:100%;
+}
+.btn-long {
+  height: 42px;
+  padding: 5px 60px;
+}
+.slider-button {
+  margin-top:100px;
+}
+
+//Overwrite
+input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown{
+  border-bottom: 1px solid #26a69a;
+  -webkit-box-shadow: 0 1px 0 0 #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}

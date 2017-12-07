@@ -1,0 +1,40 @@
+
+<div class="container">
+
+  <div id="sign-in">
+    <h2 class="center-align teal-text">LOGIN FORM</h2>
+    <form id="login-form-submit">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input id="identifier" name="identifier" type="text" class="validate"
+                 value="<%=_.get(req.allParams(), 'email','')%>">
+          <label for="identifier">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">vpn_key</i>
+          <input id="password" name="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <button class="btn btn-full btn-large waves-effect waves-light" type="submit" name="action">LOGIN
+            <!--<i class="fa fa-send"></i>-->
+          </button>
+        </div>
+      </div>
+
+      <p class="center-align"><a href="#">Forgot your password?</a></p>
+      <p class="center-align"><a href="/register">Create new account</a></p>
+      <input type="hidden" name="location" value="<%=_.get(req.allParams(), 'location', 'user')%>" />
+    </form>
+    </div>
+
+</div>
+
+
+
